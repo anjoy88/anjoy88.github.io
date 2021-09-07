@@ -1,0 +1,144 @@
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,  
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,  
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend { 
+  vertical-align: baseline; 
+  font-family: inherit; 
+  font-weight: inherit; 
+  font-style: inherit; 
+  font-size: 100%; 
+  outline: 0; 
+  padding: 0; 
+  margin: 0; 
+  border: 0; 
+  } 
+/* remember to define focus styles! */ 
+:focus { 
+  outline: 0; 
+  } 
+body { 
+  background: white; 
+  line-height: 1; 
+  color: black; 
+  } 
+ol, ul { 
+  list-style: none; 
+  } 
+/* tables still need cellspacing="0" in the markup */ 
+table { 
+  border-collapse: separate; 
+  border-spacing: 0; 
+  } 
+caption, th, td { 
+  font-weight: normal; 
+  text-align: left; 
+  } 
+/* remove possible quote marks (") from <q> & <blockquote> */ 
+blockquote:before, blockquote:after, q:before, q:after { 
+  content: ""; 
+  } 
+blockquote, q { 
+  quotes: "" ""; 
+  } 
+
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-reg.eot");
+  src: url("../fonts/proximanova-reg.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-reg.woff") format("woff"),
+  url("../fonts/proximanova-reg.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-regit.eot");
+  src: url("../fonts/proximanova-regit.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-regit.woff") format("woff"),
+  url("../fonts/proximanova-regit.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-black.eot");
+  src: url("../fonts/proximanova-black.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-black.woff") format("woff"),
+  url("../fonts/proximanova-black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-bold.eot");
+  src: url("../fonts/proximanova-bold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-bold.woff") format("woff"),
+  url("../fonts/proximanova-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-boldit.eot");
+  src: url("../fonts/proximanova-boldit.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-boldit.woff") format("woff"),
+  url("../fonts/proximanova-boldit.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-light.eot");
+  src: url("../fonts/proximanova-light.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-light.woff") format("woff"),
+  url("../fonts/proximanova-light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-lightit.eot");
+  src: url("../fonts/proximanova-lightit.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-lightit.woff") format("woff"),
+  url("../fonts/proximanova-lightit.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-semibold.eot");
+  src: url("../fonts/proximanova-semibold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-semibold.woff") format("woff"),
+  url("../fonts/proximanova-semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-semibolditalic.eot");
+  src: url("../fonts/proximanova-semibolditalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-semibolditalic.woff") format("woff"),
+  url("../fonts/proximanova-semibolditalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-xbold.eot");
+  src: url("../fonts/proximanova-xbold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/proximanova-xbold.woff") format("woff"),
+  url("../fonts/proximanova-xbold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}

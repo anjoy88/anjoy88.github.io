@@ -1,0 +1,2388 @@
+@import "bourbon/bourbon"
+
+$color: #000 
+
+html, body
+	height: 100%
+
+body
+	font-family: 'ProximaNova', sans-serif
+	font-weight: normal
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.3
+	-webkit-font-smoothing: antialised
+	padding-top: 100px 
+
+.hidden
+	display: none
+.clear
+	clear: both
+
+button, a
+	color: $color
+	outline: none
+	-webkit-transition: .3s all
+	-moz-transition: .3s all
+	-ms-transition: .3s all
+	-o-transition: .3s all
+	transition: .3s all
+
+a:hover, a:focus
+	outline: none
+	color: $color
+	text-decoration: none 
+	
+section, .main_header, .main_footer
+	position: relative
+
+.container
+	padding-left: 10px
+	padding-right: 10px  
+
+form
+	position: relative
+	input[type="text"]
+		position: relative
+		outline: none
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all  
+		max-width: 283px
+		width: 100% 
+		height: 50px
+		border: 1px solid #fff
+		-webkit-border-radius: 25px 
+		border-radius: 25px   
+		background: none 
+		padding: 0px 28px 
+		font-size: 18px
+		color: #FFF  
+		margin-bottom: 15px 
+		&:focus
+			background: rgba(255,255,255,.1) 
+	::-webkit-input-placeholder 
+		color: #fff
+	::-moz-placeholder
+		color: #fff
+	:-moz-placeholder
+		color: #fff
+	:-ms-input-placeholder
+		color: #fff
+	textarea
+		position: relative
+		outline: none
+		resize: none
+		width: 100% 
+		height: 110px
+		border: 1px solid #fff
+		-webkit-border-radius: 25px 
+		border-radius: 25px   
+		background: none 
+		padding: 10px 28px
+		color: #FFF 
+		font-size: 18px
+		margin-bottom: 22px   
+		-webkit-transition: .3s all 
+		-moz-transition: .3s all 
+		-ms-transition: .3s all 
+		-o-transition: .3s all 
+		transition: .3s all  
+		&:focus
+			background: rgba(255,255,255,.1) 
+	button
+		position: relative
+		width: 100% 
+		max-width: 283px
+		width: 100% 
+		height: 50px
+		border: none
+		-webkit-border-radius: 25px 
+		border-radius: 25px   
+		background: #1aa6f3
+		font-weight: bold 
+		font-size: 21px
+		color: #FFF  
+		&:hover
+			background: #44bbff 
+
+
+
+
+// HEADER
+.main_header
+	position: absolute
+	z-index: 20 
+	top: 0px
+	left: 0px
+	right: 0px 
+	width: 100% 
+	background: #FFF 
+	padding-top: 17px
+	padding-bottom: 14px 
+	&.fixed
+		position: fixed
+		-webkit-animation: menu .3s ease 
+		-moz-animation: menu .3s ease 
+		-o-animation: menu .3s ease 
+		animation: menu .3s ease 
+		background: rgba(255,255,255,.95) 
+		padding-top: 3px
+		padding-bottom: 3px 
+		-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.2) 
+		box-shadow: 0px 0px 10px rgba(0,0,0,.2) 
+		.navbar 
+			.navbar-nav 
+				padding-top: 10px 
+	
+@-webkit-keyframes menu
+	0%  
+		opacity: 0
+		top: -100px
+	100%
+		opacity: 1 
+		top: 0px  
+@-moz-keyframes menu
+	0%  
+		opacity: 0
+		top: -100px
+	100%
+		opacity: 1 
+		top: 0px  
+@-o-keyframes menu
+	0%  
+		opacity: 0
+		top: -100px
+	100%
+		opacity: 1 
+		top: 0px  
+@keyframes menu
+	0%  
+		opacity: 0
+		top: -100px
+	100%
+		opacity: 1 
+		top: 0px
+		
+
+.navbar
+	position: relative
+	width: 100% 
+	background: none
+	border: none
+	min-height: 0px
+	margin: 0px    
+	.navbar-header
+		position: relative
+		margin: 0px
+		.navbar-brand
+			position: relative
+			padding: 0px
+			padding-left: 83px 
+			padding-top: 46px 
+			font-size: 13px
+			color: #000
+			line-height: 1
+			display: block
+			width: 240px
+			height: 69px
+			background: url("../img/logo.png") no-repeat left top
+			margin: 0px 
+			margin-right: 30px 
+	.navbar-collapse
+		float: left
+	.navbar-nav
+		position: relative
+		padding-left: 20px
+		li
+			position: relative
+			a
+				position: relative
+				font-size: 18px
+				color: #000  
+				padding-left: 0px
+				padding-right: 0px  
+				&:before
+					content: "" 
+					display: block 
+					width: 0% 
+					height: 1px 
+					background: #000
+					position: absolute
+					left: 50%
+					bottom: 10px   
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+				&:hover
+					&:before
+						left: 0px
+						width: 100%   
+		li+li
+			margin-left: 36px 
+			&:before
+				content: "" 
+				width: 4px
+				height: 4px
+				-webkit-border-radius: 50% 
+				border-radius: 50%   
+				background: #0EA9FD 
+				position: absolute
+				left: -19px 
+				top: 0px
+				bottom: 0px
+				margin: auto  
+	.tel_block
+		position: relative
+		float: right
+		text-align: right
+		padding-top: 14px 
+		a
+			position: relative
+			font-size: 24px 
+			color: #000
+			line-height: 1
+			display: inline-block
+			margin-bottom: 5px 
+			&:hover
+				color: #2B99D5 
+		p
+			position: relative
+			font-size: 15px
+			color: #000  
+
+
+#fixed_check
+	position: relative
+	width: 100% 
+	&:after
+		content: "" 
+		display: table 
+		clear: both
+
+
+
+
+// MAIN SECTION
+.main_section
+	position: relative
+	width: 100% 
+	min-height: 660px 
+	background: url("../img/main_bg.jpg") no-repeat center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover  
+	.wrap
+		position: relative
+		width: 100% 
+		padding-top: 70px
+		padding-bottom: 100px 
+	h1
+		font-weight: 800
+		font-size: 72px
+		line-height: 78px
+		color: #000    
+		max-width: 500px 
+		margin-bottom: 17px 
+	p
+		position: relative
+		max-width: 460px
+		font-size: 24px 
+		line-height: 36px
+		color: #000
+		margin-bottom: 45px 
+		span
+			font-weight: bold 
+	.orange_btn
+		line-height: 1.2 
+
+.orange_btn
+	position: relative
+	width: auto 
+	min-height: 63px
+	border: none
+	-webkit-border-radius: 31px 
+	border-radius: 31px 
+	font-weight: bold 
+	font-size: 21px 
+	color: #FFF 
+	background: #ff9000
+	padding: 10px 30px 
+	&:hover
+		background: #ffa800 
+
+
+
+
+// DISCOUNT SECTION
+.discount_section
+	position: relative
+	z-index: 2 
+	width: 100% 
+	margin-top: -70px 
+	.discount_wrapper
+		position: relative
+		width: 100% 
+		min-height: 248px 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		padding: 25px 65px 
+		padding-bottom: 10px 
+		background: url("../img/discount_bg.png") no-repeat center center
+		&:after
+			content: "" 
+			display: table 
+			clear: both
+		.text_block
+			position: relative
+			float: left
+			width: 100% 
+			max-width: 450px 
+			.discount_title
+				position: relative
+				font-weight: 800
+				font-size: 48px 
+				line-height: 48px
+				color: #FFF 
+				margin-bottom: 5px 
+				sup
+					position: relative
+					top: -18px
+					color: #FF9000 
+					font-size: 24px 
+					line-height: 0 
+			p
+				font-weight: bold 
+				font-size: 24px
+				line-height: 36px 
+				color: #FF9000  
+				margin-bottom: 8px 
+			.small_text
+				font-weight: normal 
+				font-size: 14px 
+				color: #FFF 
+				margin-bottom: 0
+				sup
+					line-height: 0 
+					color: #FF9000 
+					position: relative
+					top: 0px
+		.discount_form
+			padding-top: 10px 
+			position: relative
+			float: right
+			max-width: 283px
+			width: 100%  
+
+
+
+
+// REVIEWS
+.reviews
+	position: relative
+	width: 100% 
+	background: url("../img/cogs_1.png") no-repeat center top, url("../img/cogs_2.png") no-repeat left bottom
+	background-position: right 30% top 40px, left bottom
+	.wrapper
+		position: relative
+		width: 100% 
+		padding-top: 130px 
+		padding-bottom: 180px 
+	.title_block
+		margin-bottom: 55px 	
+	.main_title
+		position: relative
+		font-weight: 800
+		font-size: 60px
+		color: #000
+		line-height: 1
+		margin-bottom: 5px     
+	.second_title
+		font-weight: 800 
+		font-size: 36px 
+		line-height: 36px
+		color: #000  
+	.slider_block
+		position: relative
+		width: 100% 
+		.reviews_prev, .reviews_next
+			position: absolute
+			top: 50%
+			margin-top: -25px 
+			display: block 
+			width: 50px
+			height: 50px
+			-webkit-border-radius: 50% 
+			border-radius: 50%   
+			cursor: pointer
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+			&:hover
+				background-color: rgba(0,0,0,.05) 
+		.reviews_prev
+			background: url("../img/prev.png") no-repeat center center
+			-webkit-background-size: 100% 100% 
+			-o-background-size: 100% 100% 
+			background-size: 100% 100% 
+			left: -70px 
+		.reviews_next
+			background: url("../img/next.png") no-repeat center center
+			-webkit-background-size: 100% 100% 
+			-o-background-size: 100% 100% 
+			background-size: 100% 100% 
+			right: -70px 
+			
+	
+.reviews_swiper
+	position: relative
+	width: 100% 
+	overflow: hidden 
+	.swiper-slide
+		position: relative
+		width: 100% 
+		&:after
+			content: "" 
+			display: table 
+			clear: both
+		.img_block
+			position: relative
+			float: right
+			width: 51% 
+			&:after
+				content: "" 
+				display: table 
+				clear: both
+			.fancybox
+				img
+					width: 100% 
+					max-width: none
+					max-height: 100% 
+			.big_img
+				position: relative
+				width: 100% 
+				margin-bottom: 12px 
+			.left_img
+				position: relative
+				float: left
+				width: 49% 
+			.right_img
+				position: relative
+				float: right
+				width: 49% 
+		.text_block
+			position: relative
+			width: 49%
+			float: left 
+			padding-right: 40px 
+	.info_list
+		position: relative
+		list-style: none
+		li
+			font-size: 18px
+			color: #000  
+			line-height: 36px
+			margin-bottom: 22px  
+			span
+				background: #1aa6f3
+				padding: 7px 14px 
+				color: #fff 
+				margin-right: 20px  
+	p
+		font-size: 18px
+		line-height: 30px
+		color: #000
+		text-align: justify  
+		margin-bottom: 45px 
+	
+
+
+
+
+// PRICE SECTION
+.price_section
+	position: relative
+	z-index: 2 
+	width: 100% 
+	margin-top: -80px 
+	color: #FFF 
+	.bg
+		position: absolute
+		top: 0px
+		left: 0px
+		right: 0px
+		bottom: 0px   
+		z-index: -1
+		background: url("../img/price_bg.jpg") no-repeat center center
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
+		-webkit-transform: skewY(-5deg) 
+		-moz-transform: skewY(-5deg) 
+		-ms-transform: skewY(-5deg) 
+		-o-transform: skewY(-5deg) 
+		transform: skewY(-5deg)  
+	.wrapper
+		position: relative
+		width: 100%
+		padding-top: 100px 
+		padding-bottom: 350px 
+	.title_block
+		margin-bottom: 75px 	
+	.main_title
+		position: relative
+		font-weight: 800
+		font-size: 72px
+		line-height: 78px
+		margin-bottom: 5px     
+	.second_title
+		font-weight: 800 
+		font-size: 36px 
+		line-height: 36px
+
+
+
+.main_form
+	position: relative
+	width: 100% 
+	margin-bottom: 40px 
+	.radio_block
+		position: relative
+		margin-bottom: 45px 
+		&:after
+			content: ""
+			display: table 
+			clear: both
+		label
+			position: relative
+			z-index: 1 
+			float: left
+			display: inline-block
+			vertical-align: top
+			font-weight: normal 
+			font-size: 36px
+			color: #646464
+			cursor: pointer
+			input
+				display: none 
+			span
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+			input:checked+span
+				color: #FFF 
+				text-shadow: 1px 1px 0px #fff
+		label:first-of-type
+			padding-right: 50px
+		label:last-of-type
+			padding-left: 50px
+		.motor
+			span:after
+				content: ""
+				position: absolute
+				top: 10px
+				right: -26px 
+				display: block 
+				width: 52px
+				height: 30px
+				border: 1px solid #9b9b9b
+				-webkit-border-radius: 15px 
+				border-radius: 15px 
+			input:checked+span:before
+				right: -1px 
+			span:before
+				content: "" 
+				position: absolute
+				top: 13px
+				right: -23px 
+				display: block 
+				width: 24px
+				height: 24px
+				-webkit-border-radius: 50% 
+				border-radius: 50%  
+				background: #9b9b9b
+				-webkit-transition: .3s all 
+				-moz-transition: .3s all 
+				-ms-transition: .3s all 
+				-o-transition: .3s all 
+				transition: .3s all 
+	input[type="text"]
+		position: relative
+		outline: none
+		float: left
+		max-width: 288px
+		width: 100% 
+		height: 58px
+		font-size: 18px
+		margin-right: 38px 
+		color: #FFF    
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		padding-left: 20px
+		padding-right: 20px  
+		margin-bottom: 48px 
+		&:focus
+			cursor: text
+		&.active
+			background: rgba(26,166,243,.1) 
+	button
+		float: left
+		max-width: 288px
+		width: 100% 
+		height: 58px
+		font-size: 18px
+		background: #FF9000 
+		-webkit-border-radius: 10px 
+		border-radius: 10px 
+		font-weight: 500
+		line-height: 1.2 
+		color: #FFF 
+		font-size: 21px 
+		margin-bottom: 48px 
+		&:hover
+			background: #FFA800 
+	.select_block
+		position: relative
+		width: 100% 
+		&:after
+			content: "" 
+			display: table 
+			clear: both	  
+		.jq-selectbox
+			position: relative
+			float: left
+			max-width: 288px
+			width: 100% 
+			height: 58px
+			background: none
+			font-size: 18px
+			color: #FFF     
+			margin-right: 38px
+			margin-bottom: 48px   
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			&.opened
+				.jq-selectbox__select
+					&:before
+						-webkit-transform: rotateX(180deg) 
+						-moz-transform: rotateX(180deg) 
+						-ms-transform: rotateX(180deg) 
+						-o-transform: rotateX(180deg) 
+						transform: rotateX(180deg) 
+			&.changed
+				color: #fff
+				background: rgba(26,166,243,.1) 
+			.jq-selectbox__select
+				position: relative
+				width: 100% 
+				height: 100% 
+				-webkit-border-radius: 10px 
+				border-radius: 10px 
+				padding: 16px 20px
+				padding-right: 60px
+				border: 1px solid #fff
+				-webkit-border-radius: 10px 
+				border-radius: 10px 
+				cursor: pointer 
+				&:after
+					content: "" 
+					display: block 
+					width: 60px
+					height: 100% 
+					background: #9b9b9b
+					position: absolute
+					top: 0px
+					right: 0px
+					-webkit-border-top-right-radius: 10px 
+					border-top-right-radius: 10px   
+					-webkit-border-bottom-right-radius: 10px 
+					border-bottom-right-radius: 10px  
+					z-index: -1
+				&:before
+					content: "" 
+					display: block 
+					width: 16px
+					height: 13px
+					background: url("../img/select.png") no-repeat center center
+					position: absolute
+					right: 21px
+					top: 0px
+					bottom: 0px
+					margin: auto     
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+			.jq-selectbox__dropdown	 	
+				position: relative
+				width: 100%  
+				top: 0px
+				border: 1px solid #fff
+				-webkit-border-radius: 10px 
+				border-radius: 10px 
+				font-size: 18px
+				color: #FFF     
+				background: rgba(155,155,155,.9) 
+				ul
+					position: relative
+					width: 100% 
+					list-style: none
+					padding: 15px 20px
+					padding-right: 5px 
+					li
+						margin-bottom: 10px 
+						color: #FFF 
+						-webkit-transition: .3s all 
+						-moz-transition: .3s all 
+						-ms-transition: .3s all 
+						-o-transition: .3s all 
+						transition: .3s all 
+						font-weight: normal 
+						font-size: 16px 
+						cursor: pointer 
+						&:hover
+							color: #FF9000
+					li:last-of-type
+						margin-bottom: 0px 
+					li:first-of-type
+						height: 0px
+						overflow: hidden 
+						display: block 
+						margin-bottom: 0px  
+		.jq-selectbox:nth-child(3n+3)
+			margin-right: 0px 
+
+
+
+
+.motor_block
+	position: relative
+	width: 100% 
+	text-align: center
+	&:after
+		content: "" 
+		display: table 
+		clear: both
+	.second_title_block
+		position: relative
+		width: 100% 
+		margin-bottom: 40px 
+		text-align: left
+		.main_title
+			font-size: 55px
+			line-height: 1.2  
+		.second_title
+			font-size: 36px 
+	button
+		position: relative
+		width: 100%
+		max-width: 344px
+		width: 100%
+		height: 72px
+		border: none
+		-webkit-border-radius: 30px
+		border-radius: 30px
+		background: #1aa6f3
+		font-weight: bold
+		font-size: 21px
+		color: #FFF
+		&:hover
+			background: #44bbff 
+	.motor_wrapper
+		position: relative
+		width: 100% 
+		height: 720px
+		margin-bottom: 60px 
+		.motor
+			position: absolute
+			top: 215px
+			left: 240px 
+			max-width: 452px
+			width: 100% 
+			background: url("../img/motor.png") no-repeat center center
+			-webkit-background-size: 100% 100% 
+			-o-background-size: 100% 100% 
+			background-size: 100% 100%  
+		.item
+			position: absolute
+			text-align: left
+			z-index: 2 
+			.inner
+				position: relative
+				width: 100% 
+				max-width: 270px
+			p
+				font-size: 18px
+				line-height: 24px
+				color: #FFF  
+			.number
+				position: absolute
+				font-weight: 800
+				font-size: 120px 
+				opacity: .1
+				line-height: 1   
+			.icon
+				position: absolute
+				width: 70px
+				height: 70px
+				-webkit-border-radius: 50% 
+				border-radius: 50%   
+				background: #FFF 
+				background-repeat: no-repeat 
+				background-position: center center 
+				&:after
+					z-index: -1 
+		.item_1
+			top: 60px 
+			left: 0px 
+			.inner
+				padding-top: 130px 
+			.number
+				left: -10px 
+				top: 75px
+			.icon
+				position: absolute
+				top: 0px
+				left: 0px 
+				background-image: url("../img/icon_1.png")
+				&:after
+					content: "" 
+					display: block 
+					width: 279px
+					height: 185px
+					background: url("../img/line_1.png") no-repeat left top
+					position: absolute
+					top: 35px
+					left: 70px    
+		.item_2
+			top: 0px
+			right: 0px 
+			.inner
+				max-width: 350px
+				padding-right: 70px   	
+				padding-top: 50px 		
+			.number
+				left: -40px 
+				top: 110px
+			.icon
+				position: absolute
+				top: 0px
+				right: 0px 
+				background-image: url("../img/icon_2.png")
+				&:after
+					content: "" 
+					display: block 
+					width: 423px
+					height: 202px
+					background: url("../img/line_2.png") no-repeat left top
+					position: absolute
+					top: 35px
+					right: 25px    
+		.item_3
+			top: 300px
+			right: 0px 
+			.inner
+				max-width: 290px
+				padding-right: 30px   	
+				padding-top: 0px 		
+				padding-bottom: 80px 
+			.number
+				left: 60px 
+				top: 70px
+			.icon
+				position: absolute
+				top: 110px
+				right: 0px 
+				background-image: url("../img/icon_3.png")
+				&:after
+					content: "" 
+					display: block 
+					width: 375px
+					height: 135px
+					background: url("../img/line_3.png") no-repeat left top
+					position: absolute
+					top: 35px
+					right: 25px   
+		.item_4
+			top: 490px 
+			left: 0px 
+			.inner
+				padding-top: 90px 
+			.number
+				right: -10px 
+				bottom: -60px 
+			.icon
+				position: absolute
+				top: 0px
+				left: 0px 
+				background-image: url("../img/icon_4.png")
+				&:after
+					content: "" 
+					display: block 
+					width: 266px
+					height: 96px
+					background: url("../img/line_4.png") no-repeat left top
+					position: absolute
+					top: -60px
+					left: 35px   
+
+
+
+
+
+// INSTRUCTIONS SECTION
+.instructions
+	position: relative
+	z-index: 10 
+	width: 100% 
+	.wrapper
+		position: absolute
+		left: 0px
+		right: 0px
+		max-width: 1040px 
+		width: 100% 
+		min-height: 408px 
+		margin: 0 auto
+		padding-top: 45px 
+		padding-bottom: 65px  
+		background: url("../img/instruction_bg.jpg") no-repeat center -40px
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
+		-webkit-border-radius: 20px 
+		border-radius: 20px 
+		-webkit-box-shadow: 4px 4px 27px rgba(174,174,174,.4) 
+		box-shadow: 0px 10px 21px rgba(174,174,174,.4) 
+		margin-top: -230px  
+		text-align: right
+		color: #FFF 
+		&:after
+			content: "" 
+			display: table 
+			clear: both
+		.text_block
+			position: relative
+			z-index: 1 
+			float: right
+			padding-left: 240px
+			img
+				position: absolute
+				z-index: -1 
+				top: 25px
+				left: -10px 
+				max-width: 400px 
+				width: 100% 
+		.block_title
+			font-weight: 800
+			font-size: 58px
+			line-height: 1.2   
+		p
+			float: right
+			font-weight: 800
+			max-width: 560px  
+			font-size: 36px
+			line-height: 42px  
+		.orange_btn
+			margin-top: 30px 
+			width: 100% 
+			max-width: 300px 
+
+
+
+
+
+// DELIVERY
+.delivery
+	position: relative
+	width: 100% 
+	background: url("../img/delivery_bg.jpg") no-repeat center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	margin-top: -120px 
+	color: #FFF 
+	.wrapper
+		position: relative
+		width: 100% 
+		padding-top: 420px 
+		padding-bottom: 85px 
+	.title_block
+		margin-bottom: 80px 	
+	.main_title
+		position: relative
+		font-weight: 800
+		font-size: 72px
+		line-height: 78px
+		margin-bottom: 5px     
+	.second_title
+		font-weight: 800 
+		font-size: 36px 
+		line-height: 36px
+	.item
+		position: relative
+		max-width: 470px 
+		width: 100% 
+		padding-left: 115px 
+		margin-bottom: 75px 
+		&:before
+			content: "" 
+			display: block 
+			position: absolute
+			top: 5px
+			left: 0px
+		.item_title
+			position: relative
+			font-weight: 800
+			font-size: 24px 
+			margin-bottom: 10px 
+		p
+			font-size: 18px
+			line-height: 24px
+			span
+				font-weight: bold 
+	.item_1:before
+		width: 76px
+		height: 82px
+		background: url("../img/delivery_1.png") no-repeat left top  
+	.item_2:before
+		width: 73px
+		height: 45px
+		background: url("../img/delivery_2.png") no-repeat left top 
+	.item:last-of-type
+		margin-bottom: 0px 
+
+
+
+
+
+
+// GALLERY
+.gallery
+	position: relative
+	width: 100% 
+	padding-top: 85px 
+	padding-bottom: 140px 
+	background: url("../img/cogs_3.png") no-repeat center top, url("../img/cogs_4.png") no-repeat left bottom
+	background-position: right 18% top 0px, left bottom
+	.title_block
+		margin-bottom: 50px 	
+	.main_title
+		position: relative
+		font-weight: 800
+		font-size: 60px
+		line-height: 1
+		margin-bottom: 15px     
+	.second_title
+		font-weight: 800 
+		font-size: 24px 
+		line-height: 30px
+		max-width: 570px 
+	.slider_block
+		position: relative
+		width: 100% 
+		.arrows
+			position: relative
+			padding-top: 25px 
+			text-align: right
+		.gallery_prev, .gallery_next
+			position: relative
+			display: inline-block 
+			margin-left: 8px 
+			width: 50px
+			height: 50px
+			-webkit-border-radius: 50% 
+			border-radius: 50%   
+			cursor: pointer
+			-webkit-transition: .3s all 
+			-moz-transition: .3s all 
+			-ms-transition: .3s all 
+			-o-transition: .3s all 
+			transition: .3s all 
+			&:hover
+				background-color: rgba(0,0,0,.05) 
+		.gallery_prev
+			background: url("../img/prev.png") no-repeat center center
+			-webkit-background-size: 100% 100% 
+			-o-background-size: 100% 100% 
+			background-size: 100% 100% 
+		.gallery_next
+			background: url("../img/next.png") no-repeat center center
+			-webkit-background-size: 100% 100% 
+			-o-background-size: 100% 100% 
+			background-size: 100% 100% 
+
+.gallery_swiper
+	position: relative
+	width: 100% 
+	overflow: hidden 
+	.swiper-slide
+		position: relative
+		.fancybox
+			position: relative
+			display: block
+			width: 100% 
+			height: 324px 
+			img
+				width: 100% 
+				height: 100% 
+				object-fit: cover
+				object-position: center center
+		
+
+
+
+
+// STO
+.sto
+	position: relative
+	width: 100% 
+	position: relative
+	z-index: 2 
+	width: 100% 
+	height: 850px 
+	margin-top: -80px 
+	color: #FFF 
+	.bg
+		position: absolute
+		top: 0px
+		left: 0px
+		right: 0px
+		bottom: 0px   
+		z-index: -1
+		-webkit-transform: skewY(-5deg) 
+		-moz-transform: skewY(-5deg) 
+		-ms-transform: skewY(-5deg) 
+		-o-transform: skewY(-5deg) 
+		transform: skewY(-5deg) 
+		overflow: hidden 
+		.in
+			position: absolute 
+			top: 0px
+			bottom: 0px
+			width: 100% 
+			left: 0px
+			margin-top: -100px 
+			margin-bottom: -100px 
+			background: url("../img/sto_bg.jpg") no-repeat center center
+			-webkit-background-size: cover 
+			-o-background-size: cover 
+			background-size: cover 
+			-webkit-transform: skewY(-5deg) 
+			-moz-transform: skewY(-5deg) 
+			-ms-transform: skewY(-5deg) 
+			-o-transform: skewY(-5deg) 
+			transform: skewY(5deg)   
+	.wrapper
+		position: relative
+		width: 100%
+		padding-top: 100px 
+		padding-bottom: 50px 
+	.title_block
+		margin-bottom: 40px 	
+	.main_title
+		position: relative
+		font-weight: 800
+		font-size: 90px
+		line-height: 1.1
+		margin-bottom: 5px     
+	.second_title
+		font-weight: 800 
+		font-size: 30px 
+		line-height: 36px
+		max-width: 500px 
+
+.motor_search
+	position: relative
+	max-width: 458px
+	width: 100% 
+	min-height: 504px 
+	float: right
+	padding: 25px 60px
+	padding-bottom: 55px 
+	background: url("../img/motor_search_bg.png") no-repeat center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover   
+	-webkit-border-radius: 10px 
+	border-radius: 10px 
+	margin-top: -50px 
+	text-align: center
+	p
+		font-weight: 800
+		font-size: 30px
+		color: #FFF 
+		line-height: 1.2
+		margin-bottom: 20px    
+	.select_block
+		position: relative
+		width: 100% 
+		&:after
+			content: "" 
+			display: table 
+			clear: both	  
+		.jq-selectbox
+			position: relative
+			width: 100% 
+			height: 50px
+			background: none
+			font-size: 18px
+			color: #FFF     
+			margin-bottom: 18px   
+			-webkit-border-radius: 25px 
+			border-radius: 25px 
+			text-align: left
+			&.opened
+				.jq-selectbox__select
+					&:before
+						-webkit-transform: rotateX(180deg) 
+						-moz-transform: rotateX(180deg) 
+						-ms-transform: rotateX(180deg) 
+						-o-transform: rotateX(180deg) 
+						transform: rotateX(180deg) 
+			&.changed
+				color: #fff
+				background: rgba(26,166,243,.1) 
+			.jq-selectbox__select
+				position: relative
+				width: 100% 
+				height: 100% 
+				padding: 13px 25px
+				padding-right: 60px
+				border: 1px solid #fff
+				-webkit-border-radius: 25px 
+				border-radius: 25px 
+				cursor: pointer 
+				&:before
+					content: "" 
+					display: block 
+					width: 13px
+					height: 10px
+					background: url("../img/select.png") no-repeat center center
+					-webkit-background-size: 100% 100% 
+					-o-background-size: 100% 100% 
+					background-size: 100% 100% 
+					position: absolute
+					right: 20px
+					top: 0px
+					bottom: 0px
+					margin: auto     
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+			.jq-selectbox__dropdown	 	
+				position: absolute
+				width: 100%  
+				top: 100%
+				border: 1px solid #fff
+				-webkit-border-radius: 25px 
+				border-radius: 25px 
+				font-size: 18px
+				color: #FFF     
+				background: rgba(155,155,155,.9) 
+				ul
+					position: relative
+					width: 100% 
+					list-style: none
+					padding: 15px 20px
+					padding-right: 5px 
+					li
+						margin-bottom: 10px 
+						color: #FFF 
+						-webkit-transition: .3s all 
+						-moz-transition: .3s all 
+						-ms-transition: .3s all 
+						-o-transition: .3s all 
+						transition: .3s all 
+						font-weight: normal 
+						font-size: 16px 
+						cursor: pointer 
+						&:hover
+							color: #FF9000
+					li:last-of-type
+						margin-bottom: 0px 
+					li:first-of-type
+						height: 0px
+						overflow: hidden 
+						display: block 
+						margin-bottom: 0px  
+	.radio_block
+		position: relative
+		width: 100% 
+		margin-bottom: 18px 
+		text-align: left
+		padding-top: 5px 
+		padding-bottom: 5px 
+		label
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-size: 18px
+			color: #FFF  
+			margin-left: 27px 
+			cursor: pointer 
+			input
+				display: none
+			span
+				position: relative
+				padding-left: 23px 
+				&:before
+					content: "" 
+					display: block 
+					width: 14px 
+					height: 14px
+					border: 1px solid #fff
+					-webkit-border-radius: 50% 
+					border-radius: 50%   
+					position: absolute
+					left: 0px
+					top: 0px
+					bottom: 0px
+					margin: auto   
+				&:after
+					content: "" 
+					display: block 
+					width: 8px
+					height: 8px
+					-webkit-border-radius: 50% 
+					border-radius: 50%   
+					background: #f17029
+					position: absolute
+					left: 3px
+					top: 0px
+					bottom: 0px
+					margin: auto   
+					-webkit-transition: .2s all 
+					-moz-transition: .2s all 
+					-ms-transition: .2s all 
+					-o-transition: .2s all 
+					transition: .2s all   
+					-webkit-transform: scale(0) 
+					-moz-transform: scale(0) 
+					-ms-transform: scale(0) 
+					-o-transform: scale(0) 
+					transform: scale(0) 
+			input:checked+span
+				&:after
+					-webkit-transform: scale(1) 
+					-moz-transform: scale(1) 
+					-ms-transform: scale(1) 
+					-o-transform: scale(1) 
+					transform: scale(1) 
+	.text_input_block
+		position: relative
+		width: 100% 
+		margin-bottom: 28px 
+		&:after
+			content: "" 
+			display: table 
+			clear: both
+		input
+			position: relative
+			outline: none 
+			width: 48%
+			height: 50px
+			-webkit-border-radius: 25px 
+			border-radius: 25px 
+			padding: 13px 25px
+			border: 1px solid #fff
+			font-size: 18px
+			color: #FFF 
+			float: left
+		input:last-of-type
+			float: right
+	button
+		max-width: 100% 
+		height: 50px
+		font-weight: bold 
+		font-size: 21px  	 
+
+
+
+
+
+// MOTOR SECTION
+.motor_section
+	position: relative
+	width: 100% 
+	margin-top: -140px 
+	background: url("../img/motor.jpg") no-repeat center 240px #000
+	color: #FFF  
+	.wrapper
+		position: relative
+		width: 100% 
+		padding-top: 240px 
+		padding-bottom: 40px 
+		background: url("../img/cogs_5.png") no-repeat 5% 160px 
+	ul
+		list-style: none
+		position: relative
+		.item
+			position: relative
+			width: 100% 
+			font-size: 16px
+			color: #FFF 
+			line-height: 24px
+			margin-bottom: 50px 
+			min-height: 70px 
+			padding-left: 80px 
+			&:before
+				content: "" 
+				display: block 
+				width: 80px
+				height: 70px 
+				position: absolute
+				left: 0px
+				top: 0px
+				background-repeat: no-repeat 
+				background-position: left 5px
+			&:after
+				content: "" 
+				display: block 
+				position: absolute
+				top: 50% 
+				left: 100%
+				background-repeat: no-repeat 
+				background-position: left top
+				-webkit-background-size: 100% 100% 
+				-o-background-size: 100% 100% 
+				background-size: 100% 100% 
+		.item_1
+			max-width: 372px 	 
+			margin-left: 125px  
+			&:before
+				background-image: url("../img/motor_icon_1.png") 
+			&:after
+				width: 81px
+				height: 128px 
+				background-image: url("../img/motor_line_1.png") 
+				top: 30px
+		.item_2
+			max-width: 340px 	 
+			margin-left: 75px  
+			&:before
+				background-image: url("../img/motor_icon_2.png") 
+			&:after
+				width: 95px
+				height: 39px 
+				background-image: url("../img/motor_line_2.png") 
+				top: 30px
+		.item_3
+			max-width: 405px 	 
+			margin-left: 15px  
+			&:before
+				background-image: url("../img/motor_icon_3.png") 
+			&:after
+				width: 48px
+				height: 2px 
+				background-image: url("../img/motor_line_3.png") 
+				top: 30px
+		.item_4
+			max-width: 300px 	 
+			margin-left: 0px  
+			&:before
+				background-image: url("../img/motor_icon_4.png") 
+			&:after
+				width: 196px
+				height: 2px 
+				background-image: url("../img/motor_line_4.png") 
+				top: 30px
+		.item_5
+			max-width: 270px 	 
+			margin-left: 50px  
+			&:before
+				background-image: url("../img/motor_icon_5.png") 
+			&:after
+				width: 164px
+				height: 38px 
+				background-image: url("../img/motor_line_5.png") 
+				top: 0px
+		.item_6
+			max-width: 300px 	 
+			margin-left: 140px  
+			&:before
+				background-image: url("../img/motor_icon_6.png") 
+			&:after
+				width: 140px
+				height: 126px 
+				background-image: url("../img/motor_line_6.png") 
+				top: -50px
+
+
+
+
+
+
+// ADVANTAGES
+.advantages
+	position: relative
+	width: 100% 
+	background: url("../img/advantages_bg.jpg") no-repeat center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	color: #FFF 
+	.wrapper
+		position: relative
+		width: 100% 
+		padding-top: 40px 
+		padding-bottom: 50px 
+	.title_block
+		margin-bottom: 60px 	
+	.main_title
+		position: relative
+		font-weight: 800
+		font-size: 60px
+		line-height: 1.1
+		margin-bottom: 5px     
+	.second_title
+		font-weight: 800 
+		font-size: 32px 
+		line-height: 36px
+	.wrap
+		position: relative
+		width: 100% 
+		&:after
+			content: "" 
+			display: table 
+			clear: both
+		ul
+			position: relative
+			float: right
+			width: 100% 
+			max-width: 480px 
+			margin-bottom: 60px 
+			&:after
+				content: "" 
+				display: table 
+				clear: both
+			li
+				position: relative
+				float: left
+				width: 50%
+				min-height: 245px 
+				padding-left: 15px 
+				.icon_1
+					position: relative
+					width: 100% 
+					height: 70px
+					margin-bottom: 5px 
+					background: url("../img/garant_icon_1.png") no-repeat left center
+				.icon_2
+					position: relative
+					width: 100% 
+					height: 70px
+					margin-bottom: 5px 
+					background: url("../img/garant_icon_2.png") no-repeat left center
+				.icon_3
+					position: relative
+					width: 100% 
+					height: 70px
+					margin-bottom: 5px 
+					background: url("../img/garant_icon_3.png") no-repeat left center
+				.icon_4
+					position: relative
+					width: 100% 
+					height: 70px
+					margin-bottom: 5px 
+					background: url("../img/garant_icon_4.png") no-repeat left center
+				h5
+					font-weight: 800 
+					font-size: 24px 
+					margin-bottom: 10px 
+				p
+					font-size: 18px
+					line-height: 1.2  
+			li:nth-child(2n+1)
+				padding-right: 25px 
+				padding-left: 0px 
+	.garant_block
+		position: relative
+		float: right
+		max-width: 500px 
+		width: 100% 
+		padding: 10px 
+		padding-left: 135px  
+		background: url("../img/garant.png") no-repeat 15px center 
+		border: 1px solid #4D4D4D 
+		margin-bottom: 60px 
+		p
+			font-weight: 800
+			font-size: 30px
+			line-height: 1.2 
+			color: #FFF 
+		.orange
+			color: #ff9000 
+	.mid_tel	
+		position: relative
+		width: 100% 
+		text-align: center
+		clear: both
+		p
+			font-size: 30px
+			color: #FFF 
+		a
+			font-weight: 800
+			color: #ff9000
+			font-size: 42px 
+			&:hover
+				color: #FFA800   
+
+
+
+
+
+
+// ARTICLE
+.article
+	position: relative
+	z-index: 3 
+	width: 100% 
+	padding-top: 60px 
+	padding-bottom: 0px
+	background: url("../img/cogs_7.png") no-repeat right top, url("../img/cogs_8.png") no-repeat left bottom
+	.wrapper
+		position: relative
+		width: 100% 
+		max-width: 881px
+		margin: 0 auto
+		margin-bottom: -50px 
+	.title_block
+		margin-bottom: 35px 	
+	.main_title
+		position: relative
+		font-weight: 800
+		font-size: 60px
+		line-height: 1.1
+		margin-bottom: 20px     
+	.second_title
+		font-weight: normal
+		font-size: 36px 
+		line-height: 1.2
+		font-style: italic 
+	.item
+		position: relative
+		width: 100% 
+		background: #fff
+		-webkit-box-shadow: 0px 0px 21px rgba(174,174,174,.4) 
+		box-shadow: 0px 0px 21px rgba(174,174,174,.4)  
+		.item_header
+			position: relative
+			display: block 
+			width: 100% 
+			height: 50px
+			background: url("../img/drive2_ru.png") no-repeat 2px top #171717
+		.item_title
+			position: relative
+			width: 100% 
+			min-height: 122px
+			padding: 16px 18px
+			img
+				max-width: 100% 
+				max-height: 100% 
+		.img
+			position: relative
+			width: 100% 
+			max-width: 100% 
+			max-height: 100% 
+			img
+				max-width: 100% 
+				max-height: 100% 
+		.item_text
+			position: relative
+			width: 100% 
+			padding: 30px 30px 
+			padding-bottom: 40px 
+			p
+				font-family: Arial, sans-serif
+				font-size: 16px
+				line-height: 24px
+				color: #c0c2c2    
+				margin-bottom: 15px 
+			.read_more
+				position: absolute
+				bottom: 20px
+				right: 40px 
+				color: #171717 
+				font-family: Arial, sans-serif
+				font-size: 16px 
+				line-height: 1.1
+				border: none
+				background: none
+				padding: 0px  
+				border-bottom: 1px dashed #171717   
+		.hidden_text
+			display: none 		 
+
+
+
+
+
+// QUESTION SECTION
+.question_section
+	position: relative
+	z-index: 2 
+	width: 100% 
+	margin-top: -50px 
+	color: #FFF 
+	.bg
+		position: absolute
+		top: 0px
+		left: 0px
+		right: 0px
+		bottom: 0px   
+		z-index: -1
+		background: url("../img/question_bg.jpg") no-repeat center center
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
+		-webkit-transform: skewY(-5deg) 
+		-moz-transform: skewY(-5deg) 
+		-ms-transform: skewY(-5deg) 
+		-o-transform: skewY(-5deg) 
+		transform: skewY(-5deg)  
+		overflow: hidden 
+		&:after	
+			content: "" 
+			display: block 
+			z-index: -1 
+			width: 782px
+			background: url("../img/cogs_9.png") no-repeat left top   
+			-webkit-transform: skewY(5deg) 
+			-moz-transform: skewY(5deg) 
+			-ms-transform: skewY(5deg) 
+			-o-transform: skewY(5deg) 
+			transform: skewY(5deg)  
+			position: absolute
+			top: 0px
+			right: 0px 
+	.wrapper
+		position: relative
+		width: 100%
+		padding-top: 150px 
+		padding-bottom: 70px 
+	.container
+		position: relative
+	.main_title
+		position: relative
+		font-weight: 800
+		font-size: 72px
+		line-height: 60px
+		margin-bottom: 5px   
+		color: #FF9000   
+		span
+			font-size: 60px
+	.second_title
+		font-weight: 800 
+		font-size: 36px 
+		line-height: 48px
+		color: #FFF 
+		margin-bottom: 65px 
+	.name
+		font-weight: 800
+		font-size: 34px
+		color: #FFF 
+	.second_name
+		font-weight: normal
+		font-style: italic 
+		font-size: 26px    
+		margin-bottom: 45px 
+	button
+		position: relative
+		width: 100% 
+		max-width: 320px
+		width: 100% 
+		height: 62px
+		border: none
+		-webkit-border-radius: 30px 
+		border-radius: 30px   
+		background: #1aa6f3
+		font-weight: bold 
+		font-size: 21px
+		color: #FFF  
+		&:hover
+			background: #44bbff 
+	.master
+		position: absolute
+		bottom: -150px 
+		right: -80px 
+
+
+
+
+
+// CONTACTS
+.contacts
+	position: relative
+	width: 100% 
+	margin-top: -100px 
+	#map
+		position: relative
+		width: 100% 
+		height: 800px 
+	.wrapper
+		position: absolute
+		width: 100% 
+		height: 0px 
+		z-index: 1 
+	.container
+		position: relative
+	.contacts_title
+		position: absolute
+		left: 10px 
+		top: 170px 
+		font-weight: 800
+		font-size: 60px 
+		color: #000
+		line-height: 1 
+		max-width: 400px 
+	.soc_list
+		position: absolute
+		left: -120px
+		bottom: 170px  
+		list-style: none
+		-webkit-transform: rotate(-90deg) 
+		-moz-transform: rotate(-90deg) 
+		-ms-transform: rotate(-90deg) 
+		-o-transform: rotate(-90deg) 
+		transform: rotate(-90deg) 
+		li
+			position: relative
+			float: left
+			font-weight: bold 
+			font-size: 20px
+			color: #000
+			padding-right: 45px 
+			margin-right: 10px 
+			line-height: 1   
+			&:after
+				content: "" 
+				display: block 
+				width: 28px
+				height: 2px 
+				background: #A8A8A8  
+				position: absolute
+				right: 0px
+				top: 3px
+				bottom: 0px
+				margin: auto   
+			a
+				color: #000
+				&:hover
+					color: #FF9000 
+	.address_block
+		position: absolute
+		right: 10px
+		bottom: 0px
+		text-align: right
+		padding-bottom: 40px 
+		p
+			font-weight: bold 
+			font-size: 27px
+			color: #000
+			line-height: 1.2
+		a
+			font-weight: bold 
+			font-size: 27px
+			color: #000
+			line-height: 1.2
+			&:hover
+				color: #FF9000 
+		.address
+			margin-bottom: 25px 
+
+
+
+.ymaps-2-1-55-ground-pane
+	-webkit-filter: grayscale(100%)
+	filter: grayscale(100%)
+
+
+
+
+
+
+// FOOTER
+.main_footer
+	position: relative
+	width: 100% 
+	background: #1C1C1C 
+	padding-top: 35px 
+	padding-bottom: 35px
+	.container
+		position: relative 
+	.logo
+		position: relative
+		padding: 0px
+		padding-left: 84px 
+		padding-top: 46px 
+		font-size: 13px
+		color: #fff
+		line-height: 1
+		display: block
+		width: 240px
+		height: 69px
+		background: url("../img/logo.png") no-repeat left top
+		margin: 0px 
+		margin-right: 30px 
+		float: left
+	.tel_block
+		position: relative
+		float: right
+		text-align: right
+		padding-top: 14px 
+		a
+			position: relative
+			font-size: 24px 
+			color: #fff
+			line-height: 1
+			display: inline-block
+			margin-bottom: 5px 
+			&:hover
+				color: #2B99D5 
+		p
+			position: relative
+			font-size: 15px
+			color: #fff
+	.author_link
+		position: absolute
+		display: block 
+		left: 0px
+		right: 0px
+		top: -5px
+		margin: auto  
+		width: 84px 
+		height: 80px
+		opacity: .5
+		&:hover
+			opacity: 1  
+		img
+			width: 100% 
+			height: 100%  
+
+
+
+
+.modal-backdrop.in
+	opacity: .9 
+
+// MODAL
+.modal
+	.modal-dialog
+		max-width: 455px 
+		width: 100% 
+		margin: 0 auto
+		margin-top: 5%
+		.modal-content
+			position: relative
+			width: 100% 
+			background: url("../img/modal_bg_1.jpg") no-repeat center center
+			-webkit-background-size: cover 
+			-o-background-size: cover 
+			background-size: cover  
+			border: none
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			.modal-body
+				position: relative
+				width: 100% 
+				padding: 30px 15px
+				padding-bottom: 55px 
+				text-align: center
+				.close
+					position: absolute
+					top: -22px 
+					right: -15px 
+					width: 41px 
+					height: 41px
+					-webkit-border-radius: 50% 
+					border-radius: 50% 
+					opacity: 1
+					background: url("../img/close_modal.png") no-repeat center center  
+					-webkit-transition: .5s all 
+					-moz-transition: .5s all 
+					-ms-transition: .5s all 
+					-o-transition: .5s all 
+					transition: .5s all 
+					&:hover
+						-webkit-transform: rotate(90deg) 
+						-moz-transform: rotate(90deg) 
+						-ms-transform: rotate(90deg) 
+						-o-transform: rotate(90deg) 
+						transform: rotate(90deg) 
+				h5
+					font-weight: 800
+					font-size: 30px 
+					color: #FFF  
+					margin-bottom: 30px 
+				p
+					font-size: 21px
+					color: #FFF  
+.modal_form
+	position: relative
+	width: 100% 
+	max-width: 332px 
+	margin: 0 auto 
+	.select_block
+		position: relative
+		width: 100% 
+		&:after
+			content: "" 
+			display: table 
+			clear: both	  
+		.jq-selectbox
+			position: relative
+			width: 100% 
+			height: 50px
+			background: none
+			font-size: 18px
+			color: #FFF     
+			margin-bottom: 18px   
+			-webkit-border-radius: 25px 
+			border-radius: 25px 
+			text-align: left
+			&.opened
+				.jq-selectbox__select
+					&:before
+						-webkit-transform: rotateX(180deg) 
+						-moz-transform: rotateX(180deg) 
+						-ms-transform: rotateX(180deg) 
+						-o-transform: rotateX(180deg) 
+						transform: rotateX(180deg) 
+			&.changed
+				color: #fff
+				background: rgba(26,166,243,.1) 
+			.jq-selectbox__select
+				position: relative
+				width: 100% 
+				height: 100% 
+				padding: 13px 25px
+				padding-right: 60px
+				border: 1px solid #fff
+				-webkit-border-radius: 25px 
+				border-radius: 25px 
+				cursor: pointer 
+				&:before
+					content: "" 
+					display: block 
+					width: 13px
+					height: 10px
+					background: url("../img/select.png") no-repeat center center
+					-webkit-background-size: 100% 100% 
+					-o-background-size: 100% 100% 
+					background-size: 100% 100% 
+					position: absolute
+					right: 20px
+					top: 0px
+					bottom: 0px
+					margin: auto     
+					-webkit-transition: .3s all 
+					-moz-transition: .3s all 
+					-ms-transition: .3s all 
+					-o-transition: .3s all 
+					transition: .3s all 
+			.jq-selectbox__dropdown	 	
+				position: absolute
+				width: 100%  
+				top: 100%
+				border: 1px solid #fff
+				-webkit-border-radius: 25px 
+				border-radius: 25px 
+				font-size: 18px
+				color: #FFF     
+				background: rgba(155,155,155,.9) 
+				ul
+					position: relative
+					width: 100% 
+					list-style: none
+					padding: 15px 20px
+					padding-right: 5px 
+					li
+						margin-bottom: 10px 
+						color: #FFF 
+						-webkit-transition: .3s all 
+						-moz-transition: .3s all 
+						-ms-transition: .3s all 
+						-o-transition: .3s all 
+						transition: .3s all 
+						font-weight: normal 
+						font-size: 16px 
+						cursor: pointer 
+						&:hover
+							color: #FF9000
+					li:last-of-type
+						margin-bottom: 0px 
+					li:first-of-type
+						height: 0px
+						overflow: hidden 
+						display: block 
+						margin-bottom: 0px  
+	.radio_block
+		position: relative
+		width: 100% 
+		margin-bottom: 18px 
+		text-align: left
+		padding-top: 5px 
+		padding-bottom: 5px 
+		label
+			position: relative
+			display: inline-block
+			vertical-align: top
+			font-size: 18px
+			color: #FFF  
+			margin-left: 27px 
+			cursor: pointer 
+			input
+				display: none
+			span
+				position: relative
+				padding-left: 23px 
+				&:before
+					content: "" 
+					display: block 
+					width: 14px 
+					height: 14px
+					border: 1px solid #fff
+					-webkit-border-radius: 50% 
+					border-radius: 50%   
+					position: absolute
+					left: 0px
+					top: 0px
+					bottom: 0px
+					margin: auto   
+				&:after
+					content: "" 
+					display: block 
+					width: 8px
+					height: 8px
+					-webkit-border-radius: 50% 
+					border-radius: 50%   
+					background: #f17029
+					position: absolute
+					left: 3px
+					top: 0px
+					bottom: 0px
+					margin: auto   
+					-webkit-transition: .2s all 
+					-moz-transition: .2s all 
+					-ms-transition: .2s all 
+					-o-transition: .2s all 
+					transition: .2s all   
+					-webkit-transform: scale(0) 
+					-moz-transform: scale(0) 
+					-ms-transform: scale(0) 
+					-o-transform: scale(0) 
+					transform: scale(0) 
+			input:checked+span
+				&:after
+					-webkit-transform: scale(1) 
+					-moz-transform: scale(1) 
+					-ms-transform: scale(1) 
+					-o-transform: scale(1) 
+					transform: scale(1) 
+	.text_input_block
+		position: relative
+		width: 100% 
+		margin-bottom: 27px 
+		&:after
+			content: "" 
+			display: table 
+			clear: both
+		input
+			position: relative
+			outline: none 
+			width: 48%
+			height: 50px
+			-webkit-border-radius: 25px 
+			border-radius: 25px 
+			padding: 13px 25px
+			border: 1px solid #fff
+			font-size: 18px
+			color: #FFF 
+			float: left
+			margin-bottom: 0px 
+		input:last-of-type
+			float: right
+	button
+		max-width: 100% 
+		height: 50px
+		font-weight: bold 
+		font-size: 21px  	 
+
+
+
+
+.thanks_modal
+	.modal-dialog
+		.modal-content
+			background: url("../img/modal_bg_2.jpg") no-repeat center center
+			.modal-body
+				padding-top: 65px 
+				padding-bottom: 55px 
+
+
+
+.question_modal
+	.modal_form
+		input
+			max-width: 100% 
+		
+
+
+.download_modal
+	.modal-dialog
+		max-width: 940px 
+		.modal-content
+			background: url("../img/modal_bg_3.jpg") no-repeat center center
+			-webkit-background-size: cover 
+			-o-background-size: cover 
+			background-size: cover 
+			.modal-body
+				position: relative
+				padding: 34px 60px 
+				&:after
+					content: "" 
+					display: table 
+					clear: both
+				.modal_form
+					width: 100% 
+					max-width: 284px 
+					float: right
+				.text_block
+					float: left
+					text-align: left
+					max-width: 460px
+					width: 100%  
+					padding-top: 30px 
+					h5
+						margin-bottom: 0px 
+						span
+							text-transform: uppercase
+
+
+
+
+
+// THANKS PAGE
+body.thanks_page
+	padding-top: 0px 
+.page_wrapper
+	position: relative
+	width: 100% 
+	min-height: 100% 
+	padding-bottom: 150px 
+	.main_header
+		position: relative
+	.main_header.fixed
+		position: relative
+	.main_footer
+		position: absolute
+		left: 0px
+		right: 0px
+		bottom: 0px   
+
+
+.thanks_section
+	position: relative
+	width: 100% 
+	padding-top: 55px 
+	padding-bottom: 55px 
+	.photo_block
+		position: relative
+		float: left
+		width: 312px 
+		margin-right: 55px 
+		padding-top: 5px 
+		.photo
+			position: relative
+			width: 100% 
+			max-width: 312px 
+			border: 3px solid #e6e6e6
+			margin-bottom: 38px  
+		.director
+			position: relative
+			font-size: 18px
+			display: inline-block
+			color: #1C1C1C   
+			&:after
+				content: "" 
+				display: block 
+				width: 146px
+				height: 109px
+				background: url("../img/signature.png") no-repeat left top
+				-webkit-background-size: 100% 
+				-o-background-size: 100% 
+				background-size: 100% 
+				position: absolute
+				left: 100% 
+				top: -20px  
+			strong
+				font-weight: bold 
+	.text_block
+		padding-left: 380px 
+		h1
+			position: relative
+			display: inline-block
+			font-weight: 800
+			font-size: 42px 
+			line-height: 1.1  
+			margin-bottom: 40px 
+			&:before
+				content: ""
+				display: block
+				width: 270px
+				height: 1px
+				background: #000
+				position: absolute
+				right: -30px
+				bottom: 20px
+		p
+			position: relative
+			margin-bottom: 25px
+			font-size: 18px
+			color: #1C1C1C   
+			strong
+				font-weight: bold 
+		a
+			font-weight: bold 
+			&:hover
+				color: #333 
+		.buttons
+			position: relative
+			width: 100% 
+			a
+				font-weight: normal 
+				border-bottom: 1px solid #1c1c1c
+				font-size: 18px 
+				color: #1C1C1C 
+				&:hover
+					color: #333 
+					border-color: #888 
+			a:first-of-type
+				margin-right: 75px 
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
