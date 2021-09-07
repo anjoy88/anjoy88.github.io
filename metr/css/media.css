@@ -1,0 +1,789 @@
+/*==========  Desktop First Method  ========== */
+@media screen and (max-width: 1199px) {
+  .main_header {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .main_header .nav_block {
+      float: none;
+      clear: both;
+      width: 100%;
+      text-align: center;
+      padding-top: 34px; }
+      .main_header .nav_block .main_nav {
+        text-align: center; }
+        .main_header .nav_block .main_nav li {
+          float: none;
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 30px; }
+        .main_header .nav_block .main_nav li:last-of-type {
+          margin: 0 30px; }
+    .main_header .tel {
+      position: relative;
+      right: auto;
+      top: auto;
+      float: right;
+      margin-top: 7px; }
+
+  .main_section {
+    padding-top: 190px;
+    min-height: 800px; }
+    .main_section .main_img {
+      max-width: 600px; }
+    .main_section .top_item {
+      max-width: 550px;
+      padding-top: 35px;
+      padding-bottom: 55px;
+      margin-bottom: 80px; }
+      .main_section .top_item .second_title {
+        font-size: 36px;
+        line-height: 1.2; }
+    .main_section .bottom_item {
+      max-width: 400px;
+      padding-right: 0px;
+      padding-top: 30px;
+      margin-bottom: 120px; }
+      .main_section .bottom_item .item_title {
+        font-size: 28px; }
+      .main_section .bottom_item p {
+        font-size: 25px;
+        line-height: 1.5; }
+
+  .main_footer .footer_contacts {
+    position: relative;
+    text-align: right;
+    max-width: 350px; }
+  .main_footer .tel {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    display: block;
+    width: auto;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 14px;
+    margin-bottom: 30px;
+    padding-left: 55px; }
+    .main_footer .tel:before {
+      width: 43px;
+      height: 43px;
+      top: -8px; }
+
+  .stone_advantages .item p br {
+    display: none; }
+
+  .order_section .master {
+    left: -65px; }
+
+  .our_works .work_slider .arrows_block .swiper-button-next {
+    right: -70px; }
+
+  .our_works .work_slider .arrows_block .swiper-button-prev {
+    left: -70px; } }
+/* Medium Devices, Desktops */
+@media screen and (max-width: 991px) {
+  .main_header .nav_block {
+    padding-top: 30px;
+    width: auto;
+    margin-left: -15px;
+    margin-right: -15px; }
+    .main_header .nav_block .main_nav li {
+      margin: 0 16px; }
+    .main_header .nav_block .main_nav li:last-of-type {
+      margin: 0 16px; }
+
+  .main_section {
+    padding-top: 190px;
+    min-height: 600px; }
+    .main_section .mouse_icon {
+      display: none; }
+    .main_section .main_title {
+      font-size: 21px;
+      line-height: 27px;
+      padding-left: 30px;
+      margin-bottom: 30px; }
+    .main_section .main_img {
+      max-width: 430px;
+      right: -28px;
+      top: 70px; }
+    .main_section .top_item {
+      max-width: 375px;
+      margin-left: 0px;
+      padding: 25px;
+      padding-bottom: 40px;
+      margin-bottom: 55px; }
+      .main_section .top_item .second_title {
+        font-size: 25px;
+        line-height: 31px; }
+      .main_section .top_item .main_btn {
+        left: 25px;
+        bottom: -29px; }
+    .main_section .bottom_item {
+      max-width: 285px;
+      padding: 10px 25px;
+      padding-right: 0px;
+      margin-left: 0px;
+      height: 106px; }
+      .main_section .bottom_item:before {
+        width: 64px;
+        top: 19px;
+        right: -48px; }
+      .main_section .bottom_item:after {
+        width: 64px;
+        right: -48px;
+        bottom: 19px; }
+      .main_section .bottom_item .item_title {
+        font-size: 18px; }
+      .main_section .bottom_item p {
+        font-size: 17px;
+        line-height: 1.4; }
+
+  .main_btn {
+    font-size: 14px;
+    padding: 16px 25px; }
+    .main_btn:before {
+      box-shadow: inset 0px -2px 0px #b75212; }
+    .main_btn:after {
+      box-shadow: inset 0px -2px 0px rgba(237, 110, 26, 0.5); }
+
+  .main_footer .main_btn {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 40px; }
+    .advantages .item {
+      float: none;
+      width: 100%;
+      max-width: 585px;
+      margin: 0 auto;
+      margin-bottom: 32px; }
+
+  .materials {
+    padding-top: 80px;
+    padding-bottom: 50px; }
+    .materials .section_title {
+      font-size: 48px;
+      line-height: 48px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto; }
+    .materials .metr {
+      max-width: 720px;
+      bottom: -33px; }
+    .materials .item:nth-of-type(2n+3) {
+      clear: left; }
+
+  .stone_advantages .item:nth-of-type(3n+4) {
+    clear: none; }
+  .stone_advantages .item:nth-of-type(2n+3) {
+    clear: left; }
+  .stone_advantages .certificate_item {
+    margin-top: 20px; }
+
+  .order_section .container {
+    padding-top: 45px;
+    padding-bottom: 60px; }
+  .order_section .section_title {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 10px; }
+  .order_section p {
+    margin-bottom: 15px;
+    max-width: 345px; }
+  .order_section .master {
+    max-width: 230px;
+    left: 5px;
+    bottom: -60px; }
+  .order_section .main_form {
+    max-width: 320px; }
+    .order_section .main_form label {
+      float: none;
+      width: 100%;
+      margin-bottom: 20px; }
+    .order_section .main_form label:first-of-type {
+      margin-right: 0px; }
+    .order_section .main_form .main_btn {
+      padding: 20px;
+      width: 100%; }
+
+  .process_section {
+    padding-top: 80px; }
+    .process_section .section_title {
+      margin-bottom: 40px; }
+    .process_section .row {
+      padding-left: 30px;
+      padding-right: 30px; }
+    .process_section .item {
+      display: block;
+      width: 100%;
+      min-height: 95px;
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: 655px;
+      margin: 0 auto;
+      margin-bottom: 45px;
+      padding-left: 155px;
+      text-align: left; }
+      .process_section .item:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .process_section .item .icon {
+        width: 95px;
+        height: 95px;
+        position: absolute;
+        top: 0px;
+        left: 0px; }
+        .process_section .item .icon p {
+          font-size: 31px;
+          line-height: 29px; }
+      .process_section .item p {
+        font-size: 18px;
+        line-height: 24px; }
+        .process_section .item p strong {
+          text-align: left;
+          margin-top: 0px; }
+      .process_section .item .height_title {
+        min-height: 0px; }
+      .process_section .item .title {
+        margin-bottom: 5px; }
+    .process_section .item_1 .icon img {
+      width: 116px;
+      left: -7px; }
+    .process_section .item_2 .icon img {
+      width: 76px;
+      top: auto;
+      bottom: -1px;
+      left: -10px; }
+    .process_section .item_3 .icon img {
+      width: 98px;
+      top: auto;
+      bottom: -1px;
+      left: -5px; }
+    .process_section .item_4 .icon img {
+      width: 108px;
+      top: auto;
+      bottom: -8px;
+      left: -22px; }
+    .process_section .item_5 .icon img {
+      width: 121px;
+      top: auto;
+      bottom: 0px;
+      left: auto;
+      right: 0px; }
+    .process_section .item_6 .icon img {
+      width: 131px;
+      left: -25px;
+      top: 5px; }
+    .process_section .item_7 .icon img {
+      width: 85px;
+      top: auto;
+      bottom: -5px; }
+
+  .our_works .work_slider {
+    width: 588px;
+    height: 390px; }
+
+  .our_works .work_slider .arrows_block .swiper-button-next {
+    right: -60px; }
+
+  .our_works .work_slider .arrows_block .swiper-button-prev {
+    left: -60px; } }
+/* Small Devices, Tablets */
+@media screen and (max-width: 767px) {
+  .main_header {
+    text-align: center;
+    z-index: 101; }
+    .main_header .logo {
+      float: none;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      display: inline-block;
+      vertical-align: top; }
+    .main_header .tel {
+      margin-top: 0px;
+      float: none;
+      margin: 0 auto;
+      display: block;
+      width: 240px;
+      text-align: center;
+      margin-bottom: 35px; }
+    .main_header .nav_block {
+      position: absolute;
+      z-index: 90;
+      top: 130px;
+      left: -100%;
+      width: 100%;
+      -webkit-transition: 0.3s all;
+      -moz-transition: 0.3s all;
+      -ms-transition: 0.3s all;
+      -o-transition: 0.3s all;
+      transition: 0.3s all;
+      margin-left: 0px;
+      margin-right: 0px;
+      background: #03172b;
+      text-align: center;
+      padding-top: 0px; }
+      .main_header .nav_block .main_nav {
+        padding-top: 100px;
+        padding-bottom: 45px;
+        text-align: center; }
+        .main_header .nav_block .main_nav li {
+          position: relative;
+          display: block;
+          width: 100%;
+          margin: 0px;
+          margin-bottom: 40px; }
+          .main_header .nav_block .main_nav li a {
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: top; }
+        .main_header .nav_block .main_nav li:last-of-type {
+          margin: 0px;
+          margin-bottom: 0px; }
+      .main_header .nav_block.active {
+        left: 0px; }
+
+  .toggle_menu {
+    display: block; }
+
+  .main_section {
+    padding-top: 240px; }
+    .main_section .main_title {
+      padding-left: 0px;
+      text-align: center; }
+    .main_section .main_img {
+      position: relative;
+      width: auto;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      top: auto;
+      right: -20px;
+      left: auto; }
+    .main_section .top_item {
+      max-width: 100%;
+      width: 100%; }
+
+  .main_section {
+    padding-bottom: 80px; }
+    .main_section .bottom_item {
+      max-width: 100%;
+      margin-bottom: 0px;
+      border-right: 6px solid #27609c; }
+      .main_section .bottom_item:before, .main_section .bottom_item:after {
+        display: none; }
+
+  .main_footer {
+    text-align: center; }
+    .main_footer .logo {
+      float: none;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      display: inline-block;
+      vertical-align: top; }
+    .main_footer .footer_contacts {
+      float: none;
+      text-align: center;
+      margin: 0 auto; }
+
+  .callback_modal .modal-dialog .modal-content .modal-body .modal_title {
+    font-size: 26px; }
+
+  .contacts #map {
+    height: 370px; }
+  .contacts .container {
+    position: relative; }
+  .contacts .wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    min-height: 0px;
+    max-width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 35px 0px;
+    padding-bottom: 10px; }
+
+  .section_title {
+    font-size: 30px; }
+
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 30px; }
+    .advantages .item p br {
+      display: none; }
+
+  .contacts .to_top {
+    right: 15px;
+    top: -39px; }
+
+  .materials .section_title {
+    font-size: 38px;
+    line-height: 38px; }
+  .materials .metr {
+    max-width: 500px;
+    bottom: -22px; }
+
+  .stone_advantages {
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    .stone_advantages .title_info {
+      font-size: 22px;
+      line-height: 1.3; }
+    .stone_advantages .certificate_item {
+      padding-left: 0px;
+      margin-top: 0px;
+      padding-top: 0px;
+      text-align: center; }
+      .stone_advantages .certificate_item:before {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        position: relative; }
+      .stone_advantages .certificate_item p {
+        text-align: center; }
+
+  .order_section .container {
+    padding-top: 40px;
+    padding-bottom: 50px; }
+  .order_section .section_title {
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .order_section p {
+    margin-bottom: 20px;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 21px; }
+  .order_section .master {
+    display: none; }
+  .order_section .main_form {
+    max-width: 500px; }
+    .order_section .main_form label {
+      float: none;
+      width: 100%;
+      margin-bottom: 20px; }
+    .order_section .main_form label:first-of-type {
+      margin-right: 0px; }
+    .order_section .main_form .main_btn {
+      padding: 20px;
+      width: auto; }
+
+  .our_works {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .our_works .work_slider {
+      width: 400px;
+      height: 300px; }
+      .our_works .work_slider .arrows_block {
+        margin-top: -24px; }
+
+  .our_works .work_slider .arrows_block .swiper-button-next {
+    right: -20px;
+    width: 13px;
+    height: 24px; }
+
+  .our_works .work_slider .arrows_block .swiper-button-prev {
+    left: -20px;
+    width: 13px;
+    height: 24px; } }
+@media screen and (max-width: 539px) {
+  .main_section .main_title {
+    font-size: 20px; } }
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 479px) {
+  .main_header .logo {
+    padding-left: 98px;
+    font-size: 11px; }
+    .main_header .logo:before {
+      width: 73px;
+      height: 47px; }
+    .main_header .logo span {
+      font-size: 26px; }
+  .main_header .nav_block {
+    top: 115px; }
+    .main_header .nav_block .main_nav li {
+      margin-bottom: 35px; }
+
+  .main_section {
+    padding-top: 230px; }
+    .main_section .main_title {
+      font-size: 13px; }
+    .main_section .main_img {
+      right: auto;
+      width: 108%;
+      max-width: 108%; }
+    .main_section .top_item {
+      padding: 15px 18px;
+      padding-bottom: 32px;
+      margin-bottom: 40px; }
+      .main_section .top_item .second_title {
+        font-size: 20px;
+        line-height: 25px; }
+      .main_section .top_item .main_btn {
+        left: 18px;
+        bottom: -25px; }
+    .main_section .bottom_item {
+      padding: 15px 18px;
+      width: 100%;
+      max-width: 100%;
+      border-right: 6px solid #27609c; }
+      .main_section .bottom_item:before, .main_section .bottom_item:after {
+        display: none; }
+      .main_section .bottom_item .item_title {
+        font-size: 17px; }
+      .main_section .bottom_item p {
+        font-size: 16px;
+        line-height: 24px; }
+
+  .main_btn {
+    font-size: 11px; }
+
+  .main_footer {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .main_footer .logo {
+      padding-left: 84px;
+      font-size: 11px;
+      margin-bottom: 35px; }
+      .main_footer .logo:before {
+        width: 73px;
+        height: 47px; }
+      .main_footer .logo span {
+        font-size: 26px; }
+    .main_footer .tel {
+      font-size: 20px;
+      padding-left: 47px;
+      margin-top: 0px;
+      margin-bottom: 35px; }
+      .main_footer .tel:before {
+        width: 36px;
+        height: 36px;
+        top: -6px; }
+    .main_footer .footer_contacts {
+      float: none;
+      text-align: center;
+      margin: 0 auto; }
+    .main_footer .main_btn {
+      font-size: 14px; }
+
+  .callback_modal .modal-dialog .modal-content .modal-body {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px; }
+    .callback_modal .modal-dialog .modal-content .modal-body .modal_title {
+      font-size: 22px; }
+
+  .main_form .main_btn {
+    font-size: 14px; }
+
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 20px; }
+    .advantages .item {
+      min-height: 62px;
+      padding-left: 76px;
+      padding-right: 0px; }
+      .advantages .item:before {
+        width: 62px;
+        height: 62px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        -webkit-background-size: 60%;
+        -o-background-size: 60%;
+        background-size: 60%; }
+      .advantages .item p {
+        font-size: 16px;
+        line-height: 18px; }
+        .advantages .item p strong {
+          font-size: 17px;
+          line-height: 1; }
+      .advantages .item .item_title {
+        font-size: 17px;
+        line-height: 1; }
+    .advantages .item:nth-of-type(2n+2) {
+      padding-left: 76px;
+      padding-right: 0px; }
+
+  .materials {
+    padding-top: 60px;
+    padding-bottom: 40px; }
+    .materials .metr {
+      display: none; }
+    .materials .section_title {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 45px; }
+    .materials .item {
+      margin-bottom: 35px; }
+      .materials .item .icon {
+        height: 82px; }
+        .materials .item .icon:before {
+          width: 68px;
+          height: 68px; }
+      .materials .item p {
+        font-size: 15px;
+        line-height: 18px; }
+      .materials .item .icon_1 img {
+        max-width: 100px;
+        bottom: 5px;
+        top: auto; }
+      .materials .item .icon_2 img {
+        max-width: 100px;
+        bottom: 5px;
+        top: auto; }
+      .materials .item .icon_3 img {
+        max-width: 96px;
+        bottom: 10px;
+        top: auto; }
+      .materials .item .icon_4 img {
+        max-width: 80px;
+        bottom: 5px;
+        left: 14px;
+        top: auto; }
+      .materials .item .icon_5 img {
+        max-width: 85px;
+        top: -5px;
+        right: 10px; }
+      .materials .item .icon_6 img {
+        max-width: 100px;
+        top: -11px;
+        right: 0px; }
+      .materials .item .icon_7 img {
+        max-width: 100px;
+        bottom: 9px;
+        top: auto; }
+      .materials .item .icon_8 img {
+        max-width: 60px;
+        top: -15px; }
+
+  .stone_advantages {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .stone_advantages .title_info {
+      font-size: 17px;
+      line-height: 27px;
+      margin-bottom: 35px; }
+    .stone_advantages .section_title {
+      line-height: 27px;
+      font-size: 27px; }
+    .stone_advantages .item .icon {
+      width: 76px;
+      height: 76px;
+      margin-bottom: 12px;
+      border-width: 5px; }
+    .stone_advantages .item .item_title {
+      font-size: 18px;
+      line-height: 18px; }
+    .stone_advantages .item p {
+      font-size: 16px;
+      line-height: 18px; }
+    .stone_advantages .certificate_item:before {
+      max-width: 94px;
+      height: 80px; }
+
+  .process_section {
+    padding-top: 60px;
+    padding-bottom: 40px; }
+    .process_section .section_title {
+      margin-bottom: 35px;
+      font-size: 26px;
+      line-height: 1.3; }
+    .process_section .row {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .process_section .item {
+      min-height: 55px;
+      padding-left: 92px;
+      margin-bottom: 30px; }
+      .process_section .item:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .process_section .item .icon {
+        width: 55px;
+        height: 55px; }
+        .process_section .item .icon p {
+          font-size: 18px;
+          line-height: 17px; }
+      .process_section .item p {
+        font-size: 16px;
+        line-height: 1.3; }
+        .process_section .item p br {
+          display: none; }
+        .process_section .item p strong {
+          text-align: left;
+          margin-top: 0px; }
+      .process_section .item .height_title {
+        min-height: 0px; }
+      .process_section .item .title {
+        margin-bottom: 0px;
+        font-size: 14px; }
+    .process_section .item_1 .icon img {
+      width: 67px;
+      left: -5px; }
+    .process_section .item_2 .icon img {
+      width: 44px;
+      top: auto;
+      bottom: 0px;
+      left: -5px; }
+    .process_section .item_3 .icon img {
+      width: 56px;
+      top: auto;
+      bottom: -1px;
+      left: -5px; }
+    .process_section .item_4 .icon img {
+      width: 62px;
+      top: auto;
+      bottom: -3px;
+      left: -4px; }
+    .process_section .item_5 .icon img {
+      width: 69px;
+      top: auto;
+      bottom: 0px;
+      left: auto;
+      right: 0px; }
+    .process_section .item_6 .icon img {
+      width: 75px;
+      left: -25px;
+      top: 5px; }
+    .process_section .item_7 .icon img {
+      width: 50px;
+      top: auto;
+      bottom: -5px; }
+
+  .our_works {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .our_works .section_title {
+      font-size: 24px;
+      line-height: 1;
+      margin-bottom: 25px; }
+    .our_works .work_slider {
+      width: 264px;
+      height: 175px; }
+
+  .stone_advantages .title_info {
+    line-height: 1.3; }
+
+  .to_top {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
+    .to_top:before {
+      width: 40px;
+      height: 20px; } 
+
+    }
+
+/*# sourceMappingURL=media.css.map */
